@@ -7,10 +7,10 @@ require(['oscillator'], function(Oscillator) {
     gainNode.connect(audioCtx.destination);
 
     /* Create a new oscillator which is a sine and at 500 hertz */
-    var osc1 = new Oscillator('sine', 500);
+    var osc1 = new Oscillator('sine', 500, 5);
     osc1.start(1);
     osc1.stop(3);
-    console.log('test');
+    console.log('testing');
     /* create an outer audioCtx (so this will act as our main mixer) */
 
     // var audioCtx = new window.AudioContext();
