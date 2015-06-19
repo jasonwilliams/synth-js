@@ -12,10 +12,11 @@
   "newcap": true,
   "noarg": true,
   "quotmark": "single",
-  "undef": true,
-  "unused": true,
-  "strict": true,
+  "undef": false,
+  "unused": false,
+  "strict": false,
   "trailing": true,
   "smarttabs": true,
-  "jquery": true
+  "jquery": true,
+  "predef": ["define"]
 }
