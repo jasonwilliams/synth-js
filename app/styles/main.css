@@ -11,6 +11,12 @@ body {
   padding-bottom: 20px;
 }
 
+section h1 {
+  background-color: #00A7A2;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -61,6 +67,11 @@ body {
 
 .marketing p + h4 {
   margin-top: 28px;
+}
+
+.synth-section {
+    background-color: #343B53;
+    height: 220px;
 }
 
 /* Responsive: Portrait tablets and up */

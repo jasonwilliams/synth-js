@@ -7,22 +7,16 @@ require(['oscillator'], function(Oscillator) {
     gainNode.connect(audioCtx.destination);
 
     /* Create a new oscillator which is a sine and at 500 hertz */
-    var osc1 = new Oscillator('sine', 500, 5);
+    var osc1 = new Oscillator('sine', 329, 1, 0);
     osc1.start(1);
-    osc1.stop(3);
-    console.log('testing');
-    /* create an outer audioCtx (so this will act as our main mixer) */
+    osc1.stop(10);
+    window.osc1 = osc1;
 
-    // var audioCtx = new window.AudioContext();
-    // var oscillator = audioCtx.createOscillator();
-    // var gainNode = audioCtx.createGain();
-    // oscillator.connect(gainNode);
-    // gainNode.connect(audioCtx.destination);
-    // oscillator.type = 'sawtooth';
-    // oscillator.frequency.value = 1000;
-    // oscillator.onended = function(e) {
-    //   console.log('stopped!');
-    //   console.log(e);
-    // };
-    // oscillator.stop(2);
+    /* UI */
+    var centsControl = document.querySelector('#cents');
+    centsControl.addEventListener('change', function(data) {
+        osc1.setCents(this.value);
+    });
+
+    $('.dial').knob({fgColor: "#9C4059", bgColor: "#38C8EC", width: "50"});
 });
