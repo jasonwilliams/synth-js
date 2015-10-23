@@ -9,12 +9,21 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  color:#38C8EC;
 }
 
 section h1 {
   background-color: #00A7A2;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.dial-wrap {
+    padding: 8px;
+}
+
+.input-label {
+    display:block;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -72,6 +81,13 @@ section h1 {
 .synth-section {
     background-color: #343B53;
     height: 220px;
+}
+
+.synth-section-inner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:left;
+    align-items:flex-start;
 }
 
 /* Responsive: Portrait tablets and up */
